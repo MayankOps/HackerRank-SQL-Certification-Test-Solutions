@@ -1,0 +1,7 @@
+---- Merit Rewards
+
+
+SELECT a.employee_id , a.name from employee_information a
+join last_quarter_bonus b on a.employee_id=b.employee_id
+WHERE a.division='HR' and b.bonus>=5000
+
